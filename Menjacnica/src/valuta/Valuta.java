@@ -8,7 +8,7 @@ public class Valuta
 	private String skracenica;
 	
 	public static class Kurs{
-		GregorianCalendar datum;
+		public GregorianCalendar datum;
 		double prodajni;
 		double kupovni;
 		double srednji;
@@ -30,7 +30,7 @@ public class Valuta
 		
 	}
 	
-	private LinkedList<Kurs> kursevi = new LinkedList<>();
+	public LinkedList<Kurs> kursevi = new LinkedList<>();
 	
 	public Valuta(String naziv, String skracenica){
 		this.naziv=naziv;

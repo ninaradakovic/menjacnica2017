@@ -1,3 +1,4 @@
+package valuta;
 import java.util.GregorianCalendar;
 import java.util.LinkedList;
 
@@ -6,7 +7,7 @@ public class Valuta
 	private String naziv;
 	private String skracenica;
 	
-	private static class Kurs{
+	public static class Kurs{
 		GregorianCalendar datum;
 		double prodajni;
 		double kupovni;

@@ -1,3 +1,4 @@
+package valuta;
 import java.util.GregorianCalendar;
 
 public class Test

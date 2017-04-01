@@ -1,3 +1,4 @@
+package valuta;
 import java.util.GregorianCalendar;
 import java.util.LinkedList;
 
@@ -6,7 +7,7 @@ public class Valuta
 	private String naziv;
 	private String skracenica;
 	
-	private static class Kurs{
+	public static class Kurs{
 		GregorianCalendar datum;
 		double prodajni;
 		double kupovni;
@@ -49,8 +50,7 @@ public class Valuta
 
 	public void setNaziv(String naziv)
 	{
-		if (naziv!=null && !naziv.isEmpty())	
-			this.naziv = naziv;
+		this.naziv = naziv;
 	}
 
 	public String getSkracenica()
@@ -60,8 +60,7 @@ public class Valuta
 
 	public void setSkracenica(String skracenica)
 	{
-		if (skracenica!=null && !skracenica.isEmpty())
-			this.skracenica = skracenica;
+		this.skracenica = skracenica;
 	}
 	
 	public Kurs getKurs(GregorianCalendar datum){

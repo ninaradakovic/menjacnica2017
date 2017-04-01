@@ -49,7 +49,8 @@ public class Valuta
 
 	public void setNaziv(String naziv)
 	{
-		this.naziv = naziv;
+		if (naziv!=null && !naziv.isEmpty())	
+			this.naziv = naziv;
 	}
 
 	public String getSkracenica()
@@ -59,7 +60,8 @@ public class Valuta
 
 	public void setSkracenica(String skracenica)
 	{
-		this.skracenica = skracenica;
+		if (skracenica!=null && !skracenica.isEmpty())
+			this.skracenica = skracenica;
 	}
 	
 	public Kurs getKurs(GregorianCalendar datum){

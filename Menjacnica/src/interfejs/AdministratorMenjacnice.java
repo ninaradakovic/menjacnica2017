@@ -11,8 +11,8 @@ public class AdministratorMenjacnice implements RadSaMenjacnicom
 	@Override
 	public void ubaci_kurs(Valuta valuta, GregorianCalendar datum, double prodajni, double kupovni, double srednji)
 	{
-		// TODO Auto-generated method stub
-
+		GregorianCalendar datum1 = new GregorianCalendar();
+		valuta.ubaciKurs(datum1, prodajni, kupovni, srednji);
 	}
 
 	@Override
